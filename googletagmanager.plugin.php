@@ -2,12 +2,12 @@
 
 	class GoogleTagManager extends Plugin {
 
-		public function action_init_theme_any ( $theme ) {
+		public function action_template_footer ( ) {
 
 			$code = $this->snippet();
 
 			if ( $code ) {
-				Stack::add('template_footer_javascript', $code, 'googletagmanager');
+				echo $code;
 			}
 
 		}
