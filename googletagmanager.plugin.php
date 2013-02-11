@@ -1,5 +1,7 @@
 <?php
 
+	namespace Habari;
+
 	class GoogleTagManager extends Plugin {
 
 		public function action_template_footer ( ) {
